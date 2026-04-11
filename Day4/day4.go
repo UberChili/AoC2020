@@ -6,17 +6,19 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strconv"
 	"strings"
 )
 
 var RequiredFields = []string{"byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"}
+var ValidHCLLetters = []string{"a", "b", "c", "d", "e", "f"}
 
 type Passport struct {
 	fields map[string]string
 	valid  bool
 }
 
-func New(text string) Passport {
+func (p Passport) New(text string) Passport {
 	var fields_map = make(map[string]string)
 	for pair := range strings.FieldsSeq(text) {
 		fields := strings.Split(pair, ":")
@@ -28,17 +30,107 @@ func New(text string) Passport {
 	}
 
 	valid := true
+	passport := Passport{fields: fields_map, valid: valid}
 
 	// Checking if valid
+	// So, for part 2 is not enough to check if all fields (except for that one) are present
+	// We need to add some rules
 	for _, field := range RequiredFields {
-		_, ok := fields_map[field]
+		got, ok := fields_map[field]
 		if !ok {
-			valid = false
+			passport.valid = false
 			break
+		}
+		switch got {
+		case "byr":
+			if len(got) != 4 {
+				passport.valid = false
+				return passport
+			}
+			year, err := strconv.Atoi(got)
+			if err != nil {
+				fmt.Println("Error with year:", year, err.Error())
+				valid = false
+				return passport
+			}
+			if year < 1920 || year > 2002 {
+				valid = false
+			}
+		case "iyr":
+			if len(got) != 4 {
+				passport.valid = false
+				return passport
+			}
+			year, err := strconv.Atoi(got)
+			if err != nil {
+				fmt.Println("Error with year:", year, err.Error())
+				valid = false
+				return passport
+			}
+			if year < 2010 || year > 2020 {
+				valid = false
+			}
+		case "eyr":
+			if len(got) != 4 {
+				passport.valid = false
+				return passport
+			}
+			year, err := strconv.Atoi(got)
+			if err != nil {
+				fmt.Println("Error with year:", year, err.Error())
+				valid = false
+				return passport
+			}
+			if year < 2020 || year > 2030 {
+				valid = false
+				return passport
+			}
+		case "hgt":
+			if !strings.Contains(got, "cm") && !strings.Contains(got, "in") {
+				valid = false
+				return passport
+			}
+			if strings.Contains(got, "cm") {
+				height, err := strconv.Atoi(strings.TrimSuffix(got, "cm"))
+				if err != nil {
+					fmt.Println("Error with height:", got, err.Error())
+					valid = false
+					return passport
+				}
+				if height < 150 || height > 193 {
+					valid = false
+					return passport
+				}
+			}
+			if strings.Contains(got, "in") {
+				height, err := strconv.Atoi(strings.TrimSuffix(got, "in"))
+				if err != nil {
+					fmt.Println("Error with height:", got, err.Error())
+					valid = false
+					return passport
+				}
+				if height < 59 || height > 76 {
+					valid = false
+					return passport
+				}
+			}
+		case "hcl":
+			if !strings.Contains(got, "#") {
+				valid = false
+				return passport
+			}
+			characters := strings.TrimPrefix(got, "#")
+			if len(characters) != 6 {
+				valid = false
+				return passport
+			}
+			for _, c := range characters {
+
+			}
 		}
 	}
 
-	return Passport{fields: fields_map, valid: valid}
+	return passport
 }
 
 func main() {
@@ -46,7 +138,8 @@ func main() {
 
 	passports_arr := make([]Passport, 0)
 	for _, batch := range batches {
-		passport := New(batch)
+		passport := Passport{}
+		passport = passport.New(batch)
 		passports_arr = append(passports_arr, passport)
 	}
 
