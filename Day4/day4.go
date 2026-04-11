@@ -13,8 +13,6 @@ import (
 )
 
 var RequiredFields = []string{"byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"}
-
-var ValidHCLLetters = []string{"a", "b", "c", "d", "e", "f"}
 var ValidECL = []string{"amb", "blu", "brn", "gry", "grn", "hzl", "oth"}
 
 type Passport struct {
@@ -166,7 +164,6 @@ func (p Passport) New(text string) Passport {
 			}
 		}
 	}
-
 	return passport
 }
 
