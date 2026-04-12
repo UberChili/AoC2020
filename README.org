@@ -1,1 +1,3 @@
 * Advent of Code 2020
+
+Just trying this year randomly. Want to check out how far can I get.
