@@ -14,7 +14,7 @@ type Group struct {
 func main() {
 	fmt.Println("Hello there!")
 
-	groups := GetGroups("input.txt")
+	groups := GetGroups("example.txt")
 
 	count := 0
 	for i, g := range groups {
@@ -30,9 +30,7 @@ func CountUniqueAnswers(group string) int {
 
 	for _, char := range group {
 		if char >= 'a' && char <= 'z' {
-			if answers[char] != true {
-				answers[char] = true
-			}
+			answers[char] = true
 		}
 	}
 
