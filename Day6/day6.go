@@ -1,58 +1,55 @@
 package main
 
 import (
-	"bufio"
-	"bytes"
 	"fmt"
 	"log"
 	"os"
+	"strings"
 )
+
+type Group struct {
+	answers map[rune]int
+}
 
 func main() {
 	fmt.Println("Hello there!")
+
+	groups := GetGroups("input.txt")
+
+	count := 0
+	for i, g := range groups {
+		count += CountUniqueAnswers(g)
+		fmt.Printf("--- Group %d ---\n%s\n\n", i+1, g)
+		fmt.Println("Unique answers:", CountUniqueAnswers(g))
+	}
+	fmt.Println("Count of unique answers:", count)
+}
+
+func CountUniqueAnswers(group string) int {
+	answers := make(map[rune]bool)
+
+	for _, char := range group {
+		if char >= 'a' && char <= 'z' {
+			if answers[char] != true {
+				answers[char] = true
+			}
+		}
+	}
+
+	return len(answers)
 }
 
 func GetGroups(filepath string) []string {
-	file, err := os.Open(filepath)
+	data, err := os.ReadFile(filepath)
 	if err != nil {
-		fmt.Println("Error when opening file:", filepath, err.Error())
-		return nil
-	}
-	defer file.Close()
-
-	result := make([]string, 100)
-
-	// We start a scanner and we send in a custom policy to scan/split the file
-	scanner := bufio.NewScanner(file)
-	scanner.Split(ScanBetweenEmptyLines)
-
-	for scanner.Scan() {
-		result = append(result, scanner.Text())
+		log.Fatal("Error opening file:", filepath, err)
 	}
 
-	if err := scanner.Err(); err != nil {
-		log.Fatal(err)
+	groups := strings.Split(string(data), "\n\n")
+
+	for i := range groups {
+		groups[i] = strings.TrimSpace(groups[i])
 	}
 
-	return result
-}
-
-// Function to scan the input and get slices of strings separated by blank lines, which are the input
-func ScanBetweenEmptyLines(data []byte, atEOF bool) (advance int, token []byte, err error) {
-	if atEOF && len(data) == 0 {
-		return 0, nil, nil
-	}
-	// don't know how to do this
-	if i := bytes.Index(data, []byte("\n\n")); i >= 0 {
-		return i + 1, dropCR(data[0:i]), nil
-	}
-	// If we're at EOF, we have a final, non-terminated line. Return it
-	if atEOF {
-		return len(data), dropCR(data), nil
-	}
-	return 0, nil, nil
-}
-
-func dropCR(b []byte) []byte {
-	panic("unimplemented")
+	return groups
 }
