@@ -1,0 +1,653 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Error",
+				"Errorf"
+			],
+			[
+				"float",
+				"float64"
+			],
+			[
+				"cha",
+				"chain(…)(as Read)"
+			],
+			[
+				"clon",
+				"clone()(as Clone)"
+			],
+			[
+				"chai",
+				"chain(…)(use std::io::Read)"
+			],
+			[
+				"clo",
+				"clone()(as Clone)"
+			],
+			[
+				"to_be",
+				"to_be_bytes()"
+			],
+			[
+				"len",
+				"len()"
+			],
+			[
+				"into",
+				"into_iter()(as IntoIterator)"
+			],
+			[
+				"Ok",
+				"Ok()"
+			],
+			[
+				"into_ite",
+				"into_iter()(as IntoIterator)"
+			],
+			[
+				"into_i",
+				"into_iter()(as IntoIterator)"
+			],
+			[
+				"crc",
+				"crc_bytes"
+			],
+			[
+				"clone",
+				"clone()(as Clone)"
+			],
+			[
+				"chunk",
+				"chunk_type_bytes"
+			],
+			[
+				"Vec",
+				"Vec<_>"
+			],
+			[
+				"pri",
+				"println!(…)"
+			],
+			[
+				"Chunk",
+				"ChunkType"
+			],
+			[
+				"Chu",
+				"ChunkType"
+			],
+			[
+				"print",
+				"println!(…)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "aoc2020_sublime.sublime-project",
+			"settings":
+			{
+				"buffer_size": 554,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAC0AAAAAAAAALgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALQAAAAAAAAAtAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"",
+					null,
+					"AQAAAC4AAAAAAAAAUgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALgAAAAAAAAAuAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAtAAAAewoJImZvbGRlcnMiOgoJWwoJCXsKCQkJInBhdGgiOiAiLiIKCQl9CgldCn0K",
+					"AQAAAAAAAAABAAAALQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAACQBAAAAAAAAJQEAAAAAAAAAAAAAJQEAAAAAAAAmAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJAEAAAAAAAAkAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"",
+					null,
+					"AQAAACYBAAAAAAAAUAMAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJgEAAAAAAAAmAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAAlAQAAewoJImZvbGRlcnMiOgoJWwoJCXsKCQkJInBhdGgiOiAiLiIsCgkJfSwKCV0sCgkiYnVpbGRfc3lzdGVtcyI6CglbCgkJewoJCQkiZmlsZV9yZWdleCI6ICJeKC4rKVxcKChbMC05XSspOihbMC05XSspXFwpICguKykkIiwKCQkJIm5hbWUiOiAic25ha2UiLAoJCQkic2hlbGxfY21kIjogIm9kaW4gcnVuIC4iLAoJCX0KCV0sCgkic2V0dGluZ3MiOgoJewoJCSJhdXRvX2NvbXBsZXRlIjogZmFsc2UsCgkJIkxTUCI6CgkJewoJCQkib2RpbiI6CgkJCXsKCQkJCSJlbmFibGVkIjogdHJ1ZSwKCQkJfSwKCQl9LAoJfSwKfQo",
+					"AQAAAAAAAAABAAAAJQEAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "Day6/day6.odin",
+			"settings":
+			{
+				"buffer_size": 839,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Rust Enhanced/RustEnhanced.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"log toggle",
+				"LSP: Toggle Log Panel"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"color sche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"lsp enable",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			],
+			[
+				"enable ls",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"format",
+				"LSP: Format File"
+			],
+			[
+				"popup",
+				"Rust: Popup Message At Cursor"
+			],
+			[
+				"forma",
+				"LSP: Format File"
+			],
+			[
+				"lsp",
+				"Preferences: LSP Settings"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"package remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings"
+			],
+			[
+				"package instal",
+				"Package Control: Install Package"
+			],
+			[
+				"close project",
+				"Project: Close"
+			],
+			[
+				"lsp enabl",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/andros/Programming/AoC/2020"
+	],
+	"file_history":
+	[
+		"/home/andros/Programming/AoC/2020/Day3/day3.odin",
+		"/home/andros/Programming/AoC/2020/aoc_odin.sublime-build",
+		"/home/andros/Programming/AoC/2020/Day6/example.txt",
+		"/home/andros/Programming/AoC/2020/Day6/day6.odin",
+		"/home/andros/Programming/AoC/2020/odin_project.sublime-project",
+		"/home/andros/Programming/AoC/2020/Day2/example.txt",
+		"/home/andros/Programming/AoC/2020/Day4/day4.go",
+		"/home/andros/Programming/Go/LearnGoWithTests/structs/structs.go",
+		"/home/andros/Programming/Go/LearnGoWithTests/structs/structs_test.go",
+		"/home/andros/Programming/Go/LearnGoWithTests/arrays/arrays.go",
+		"/home/andros/Programming/Odin/Pngme2/main.odin",
+		"/home/andros/Programming/Rust/pngme/src/chunk_type.rs",
+		"/home/andros/Programming/Rust/pngme/src/chunk.rs",
+		"/home/andros/Programming/Rust/pngme/src/main.rs",
+		"/home/andros/Programming/Cpp/Query/src/main.cpp",
+		"/home/andros/Programming/Odin/Pngme/pngme.odin",
+		"/home/andros/Odin/vendor/raylib/raylib.odin",
+		"/home/andros/Odin/vendor/raylib/easings.odin",
+		"/home/andros/Programming/Odin/Pngme/pngme.sublime-project",
+		"/home/andros/Programming/Odin/sublime_odin/hello_world.odin",
+		"/home/andros/Programming/Odin/sublime_odin/sublime_odin.sublime-project",
+		"/home/andros/Programming/Odin/Pngme/pngme.sublime-build",
+		"/home/andros/Programming/Odin/Pngme/odin_buildsystem.sublime-project"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"got",
+			"another",
+			"height",
+			"int",
+			"().",
+			"Vec",
+			"\n        "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "aoc2020_sublime.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								377,
+								377
+							]
+						],
+						"settings":
+						{
+							"lsp_uri": "file:///home/andros/Programming/AoC/2020/aoc2020_sublime.sublime-project",
+							"syntax": "Packages/JSON/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Day6/day6.odin",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 839,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html, text.xml"
+								},
+								{
+									"rhs_empty": true,
+									"selector": "punctuation.accessor"
+								},
+								{
+									"characters": ".>#\"/:",
+									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
+									"server": "odin"
+								}
+							],
+							"lsp_active": true,
+							"lsp_uri": "file:///home/andros/Programming/AoC/2020/Day6/day6.odin",
+							"show_definitions": false,
+							"syntax": "Packages/Odin/Odin.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "aoc2020_sublime.sublime-project",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"lsp_uri": "file:///home/andros/Programming/AoC/2020/aoc2020_sublime.sublime-project",
+							"syntax": "Packages/JSON/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.LSP Log Panel":
+	{
+		"height": 148.0,
+		"history":
+		[
+		]
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"output.exec":
+	{
+		"height": 148.0,
+		"history":
+		[
+		]
+	},
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "AoC2020 - Run Current Day",
+	"project": "aoc2020_sublime.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"day3 odin",
+				"Day3/day3.odin"
+			],
+			[
+				"day 6.odin",
+				"Day6/day6.odin"
+			],
+			[
+				"",
+				"aoc2020_sublime.sublime-project"
+			],
+			[
+				"aoc",
+				"aoc_odin.sublime-build"
+			],
+			[
+				"day6 odin",
+				"Day6/day6.odin"
+			],
+			[
+				"example day 6",
+				"Day6/example.txt"
+			],
+			[
+				"exampl",
+				"Day2/example.txt"
+			],
+			[
+				"str",
+				"structs/structs.go"
+			],
+			[
+				"stru",
+				"structs/structs_test.go"
+			],
+			[
+				"chunk",
+				"src/chunk.rs"
+			],
+			[
+				"chunk ty",
+				"src/chunk_type.rs"
+			],
+			[
+				"raylib",
+				"raylib/raylib.odin"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 220.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 194.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
