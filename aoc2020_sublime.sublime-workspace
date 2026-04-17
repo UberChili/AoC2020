@@ -88,93 +88,42 @@
 	"buffers":
 	[
 		{
-			"file": "aoc2020_sublime.sublime-project",
+			"file": "Day6/day6.odin",
 			"settings":
 			{
-				"buffer_size": 554,
+				"buffer_size": 1469,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Day6/day6.go",
+			"settings":
+			{
+				"buffer_size": 1970,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			},
 			"undo_stack":
 			[
 				[
-					3,
+					6,
 					1,
 					"insert",
 					{
-						"characters": "\n"
+						"characters": "1"
 					},
-					"AQAAAC0AAAAAAAAALgAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAALQAAAAAAAAAtAAAAAAAAAAAAAAAAAPC/"
+					"AQAAALIHAAAAAAAAswcAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACyBwAAAAAAALIHAAAAAAAAAAAAAAAAAAA"
 				],
 				[
-					5,
-					1,
-					"",
-					null,
-					"AQAAAC4AAAAAAAAAUgEAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAALgAAAAAAAAAuAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					8,
+					7,
 					1,
 					"left_delete",
 					null,
-					"AQAAAAAAAAAAAAAAAAAAAAAAAAAtAAAAewoJImZvbGRlcnMiOgoJWwoJCXsKCQkJInBhdGgiOiAiLiIKCQl9CgldCn0K",
-					"AQAAAAAAAAABAAAALQAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					10,
-					1,
-					"left_delete",
-					null,
-					"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAACg",
-					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					13,
-					1,
-					"insert",
-					{
-						"characters": "\n\n"
-					},
-					"AgAAACQBAAAAAAAAJQEAAAAAAAAAAAAAJQEAAAAAAAAmAQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAJAEAAAAAAAAkAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					15,
-					1,
-					"",
-					null,
-					"AQAAACYBAAAAAAAAUAMAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAJgEAAAAAAAAmAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					18,
-					1,
-					"left_delete",
-					null,
-					"AQAAAAAAAAAAAAAAAAAAAAAAAAAlAQAAewoJImZvbGRlcnMiOgoJWwoJCXsKCQkJInBhdGgiOiAiLiIsCgkJfSwKCV0sCgkiYnVpbGRfc3lzdGVtcyI6CglbCgkJewoJCQkiZmlsZV9yZWdleCI6ICJeKC4rKVxcKChbMC05XSspOihbMC05XSspXFwpICguKykkIiwKCQkJIm5hbWUiOiAic25ha2UiLAoJCQkic2hlbGxfY21kIjogIm9kaW4gcnVuIC4iLAoJCX0KCV0sCgkic2V0dGluZ3MiOgoJewoJCSJhdXRvX2NvbXBsZXRlIjogZmFsc2UsCgkJIkxTUCI6CgkJewoJCQkib2RpbiI6CgkJCXsKCQkJCSJlbmFibGVkIjogdHJ1ZSwKCQkJfSwKCQl9LAoJfSwKfQo",
-					"AQAAAAAAAAABAAAAJQEAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					20,
-					1,
-					"left_delete",
-					null,
-					"AQAAAAAAAAAAAAAAAAAAAAAAAAABAAAACg",
-					"AQAAAAAAAAABAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAPC/"
+					"AQAAALIHAAAAAAAAsgcAAAAAAAABAAAAMQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACzBwAAAAAAALMHAAAAAAAAAAAAAAAA8L8"
 				]
 			]
-		},
-		{
-			"file": "Day6/day6.odin",
-			"settings":
-			{
-				"buffer_size": 839,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
 		}
 	],
 	"build_system": "Packages/Rust Enhanced/RustEnhanced.sublime-build",
@@ -188,6 +137,46 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"neovintageous reload",
+				"NeoVintageous: Reload .neovintageousrc file"
+			],
+			[
+				"neovintageous",
+				"NeoVintageous: Open .neovintageousrc file"
+			],
+			[
+				"neovinta",
+				"Preferences: NeoVintageous Settings"
+			],
+			[
+				"settings",
+				"Preferences: Settings"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"restar",
+				"LSP: Restart Server"
+			],
+			[
+				"lsp log",
+				"LSP: Toggle Log Panel"
+			],
+			[
+				"lsp resta",
+				"LSP: Restart Server"
+			],
+			[
+				"lsp rest",
+				"LSP: Restart Server"
+			],
 			[
 				"log toggle",
 				"LSP: Toggle Log Panel"
@@ -223,10 +212,6 @@
 			[
 				"enable ls",
 				"LSP: Enable Language Server in Project"
-			],
-			[
-				"package",
-				"Package Control: Install Package"
 			],
 			[
 				"format",
@@ -293,10 +278,17 @@
 	},
 	"expanded_folders":
 	[
-		"/home/andros/Programming/AoC/2020"
+		"/home/andros/Programming/AoC2020"
 	],
 	"file_history":
 	[
+		"/home/andros/Programming/AoC2020/Day6/day6.odin",
+		"/home/andros/.config/sublime-text/Packages/User/.neovintageousrc",
+		"/home/andros/Programming/AoC2020/aoc2020_sublime.sublime-project",
+		"/home/andros/Odin/core/slice/sort.odin",
+		"/home/andros/Odin/core/sys/es/api.odin",
+		"/home/andros/Odin/vendor/raylib/raylib.odin",
+		"/home/andros/Programming/AoC2020/Day6/day6.go",
 		"/home/andros/Programming/AoC/2020/Day3/day3.odin",
 		"/home/andros/Programming/AoC/2020/aoc_odin.sublime-build",
 		"/home/andros/Programming/AoC/2020/Day6/example.txt",
@@ -313,7 +305,6 @@
 		"/home/andros/Programming/Rust/pngme/src/main.rs",
 		"/home/andros/Programming/Cpp/Query/src/main.cpp",
 		"/home/andros/Programming/Odin/Pngme/pngme.odin",
-		"/home/andros/Odin/vendor/raylib/raylib.odin",
 		"/home/andros/Odin/vendor/raylib/easings.odin",
 		"/home/andros/Programming/Odin/Pngme/pngme.sublime-project",
 		"/home/andros/Programming/Odin/sublime_odin/hello_world.odin",
@@ -323,7 +314,7 @@
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 29.0
 	},
 	"find_in_files":
 	{
@@ -337,6 +328,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"groups_arr",
 			"got",
 			"another",
 			"height",
@@ -367,44 +359,12 @@
 			[
 				{
 					"buffer": 0,
-					"file": "aoc2020_sublime.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 554,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								377,
-								377
-							]
-						],
-						"settings":
-						{
-							"lsp_uri": "file:///home/andros/Programming/AoC/2020/aoc2020_sublime.sublime-project",
-							"syntax": "Packages/JSON/JSON.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "Day6/day6.odin",
 					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 839,
+						"buffer_size": 1469,
 						"regions":
 						{
 						},
@@ -434,7 +394,7 @@
 								}
 							],
 							"lsp_active": true,
-							"lsp_uri": "file:///home/andros/Programming/AoC/2020/Day6/day6.odin",
+							"lsp_uri": "file:///home/andros/Programming/AoC2020/Day6/day6.odin",
 							"show_definitions": false,
 							"syntax": "Packages/Odin/Odin.sublime-syntax",
 							"tab_size": 4,
@@ -454,32 +414,32 @@
 			"sheets":
 			[
 				{
-					"buffer": 0,
-					"file": "aoc2020_sublime.sublime-project",
+					"buffer": 1,
+					"file": "Day6/day6.go",
 					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 554,
+						"buffer_size": 1970,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1968,
+								1968
 							]
 						],
 						"settings":
 						{
-							"lsp_uri": "file:///home/andros/Programming/AoC/2020/aoc2020_sublime.sublime-project",
-							"syntax": "Packages/JSON/JSON.sublime-syntax",
+							"lsp_uri": "file:///home/andros/Programming/AoC2020/Day6/day6.go",
+							"syntax": "Packages/Go/Go.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 848.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -491,7 +451,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 30.0
+		"height": 29.0
 	},
 	"input":
 	{
@@ -555,11 +515,18 @@
 		[
 		]
 	},
+	"output.mdpopups":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
 	"pinned_build_system": "AoC2020 - Run Current Day",
 	"project": "aoc2020_sublime.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 54.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -569,6 +536,30 @@
 		"selected_items":
 		[
 			[
+				"odin day6",
+				"AoC2020/Day6/day6.odin"
+			],
+			[
+				"day 6 odin",
+				"AoC2020/Day6/day6.odin"
+			],
+			[
+				"day 6 go",
+				"Day6/day6.go"
+			],
+			[
+				"day6 odin",
+				"Day6/day6.odin"
+			],
+			[
+				"day",
+				"Day6/day6.go"
+			],
+			[
+				"",
+				"aoc2020_sublime.sublime-project"
+			],
+			[
 				"day3 odin",
 				"Day3/day3.odin"
 			],
@@ -577,16 +568,8 @@
 				"Day6/day6.odin"
 			],
 			[
-				"",
-				"aoc2020_sublime.sublime-project"
-			],
-			[
 				"aoc",
 				"aoc_odin.sublime-build"
-			],
-			[
-				"day6 odin",
-				"Day6/day6.odin"
 			],
 			[
 				"example day 6",
@@ -630,22 +613,32 @@
 	},
 	"select_symbol":
 	{
-		"height": 220.0,
-		"last_filter": "",
+		"height": 309.0,
+		"last_filter": "sort",
 		"selected_items":
 		[
+			[
+				"sort",
+				"sort"
+			],
+			[
+				"draw rectangle",
+				"DrawRectangle"
+			]
 		],
 		"width": 592.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
+		"_vintageous_reset_during_init": true,
+		"lsp_show_inlay_hints": false
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 194.0,
+	"side_bar_width": 173.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
