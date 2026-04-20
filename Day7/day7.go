@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	lines := get_lines("example.txt")
+	lines := get_lines("input.txt")
 
 	// Our map (graph)
 	graph := make(map[string][]string)
@@ -20,25 +20,48 @@ func main() {
 	}
 
 	// Just a printing loop to test
-	for key, value := range graph {
-		// fmt.Println(key, ":", value)
-		fmt.Printf("* %s: %#v\n", key, value)
-	}
-}
+	// for key, value := range graph {
+	// 	// fmt.Println(key, ":", value)
+	// 	fmt.Printf("* %s: %#v\n", key, value)
+	// }
 
-func DFS(graph map[string][]string) int {
-	// keys that we will store in the stack
-	to_visit_stack := []string{}
-	visited := []string{}
-
-	count := 0
-
-	for key, value := range graph {
-		if value == nil {
-
+	bags_count := 0
+	// Loop through all bags checking if they contain shiny gold
+	for key, _ := range graph {
+		if contains_gold(graph, key) {
+			bags_count += 1
 		}
 	}
+
+	fmt.Println("Bags that contain Shiny Gold:", bags_count)
 }
+
+func contains_gold(graph map[string][]string, bag string) bool {
+	for _, child := range graph[bag] {
+		if child == "shiny gold" {
+			return true
+		}
+		if contains_gold(graph, child) {
+			return true
+		}
+	}
+
+	return false
+}
+
+// func DFS(graph map[string][]string) int {
+// 	// keys that we will store in the stack
+// 	to_visit_stack := []string{}
+// 	visited := []string{}
+
+// 	count := 0
+
+// 	for key, value := range graph {
+// 		if value == nil {
+
+// 		}
+// 	}
+// }
 
 func parse_bag_line(text string) (string, []string) {
 	bag, rest, found := strings.Cut(text, " bags contain ")
