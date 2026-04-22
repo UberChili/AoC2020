@@ -12,6 +12,18 @@ type BagContent struct {
 	amount int
 }
 
+func get_amount_bags_inside(graph map[string][]BagContent, bag string) int {
+	if graph[bag] == nil {
+		return 0
+	}
+	count := 0
+	for _, child := range graph[bag] {
+		count += child.amount + (child.amount * get_amount_bags_inside(graph, child.color))
+	}
+
+	return count
+}
+
 // Parsing function for part 2
 // Now we need the numbers (the amount of 'this' bag that are contained)
 func parse_bag_line_part2(text string) (string, []BagContent) {

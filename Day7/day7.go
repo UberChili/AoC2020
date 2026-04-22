@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	lines := get_lines("example.txt")
+	lines := get_lines("input.txt")
 
 	// Our map (graph)
 	// For part 1, we use a simple map
@@ -48,6 +48,7 @@ func main() {
 	// }
 
 	// fmt.Println("Bags that contain Shiny Gold:", bags_count)
+	fmt.Println("Part 2: Bags contained in Shiny Gold:", get_amount_bags_inside(graph, "shiny gold"))
 }
 
 // For part 1, we just need to go deep on every node/bag to see if it eventually contains Shiny Gold
