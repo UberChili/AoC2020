@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"slices"
 	"strconv"
 )
 
@@ -17,12 +18,40 @@ func main() {
 	// 	fmt.Println(num)
 	// }
 
-	result, _ := simulate_sliding_window(numbers, 25)
-	fmt.Println(result)
+	number, _ := find_part1_number(numbers, 25)
+	fmt.Println("Part 1 number:", number)
+
+	seq := find_part2_number(numbers, number)
+	smallest := slices.Min(seq)
+	largest := slices.Max(seq)
+	fmt.Println("Part 2 number:", smallest+largest)
 }
 
-// The offset given is 25
-func simulate_sliding_window(numbers []int, offset int) (int, bool) {
+func find_part2_number(numbers []int, target int) []int {
+	sum := 0
+	sequence := []int{}
+	for i := range numbers {
+		sequence = append(sequence, numbers[i])
+		sum += numbers[i]
+		for j := i + 1; j < len(numbers); j++ {
+			if numbers[i]+numbers[j] > target {
+				sum = 0
+				sequence = nil
+				break
+			} else {
+				sequence = append(sequence, numbers[j])
+				sum += numbers[j]
+			}
+			if sum == target {
+				return sequence
+			}
+		}
+	}
+	return nil
+}
+
+// The offset given for the input is 25
+func find_part1_number(numbers []int, offset int) (int, bool) {
 	// start := offset - 1
 	found := false
 	for i := offset; i < len(numbers); i++ {
@@ -36,7 +65,7 @@ func simulate_sliding_window(numbers []int, offset int) (int, bool) {
 				}
 			}
 		}
-		fmt.Printf("i: %d numbers[i]: %d found: %b\n", i, numbers[i], found)
+		// fmt.Printf("i: %d numbers[i]: %d found: %b\n", i, numbers[i], found)
 		if found == false {
 			return numbers[i], true
 		}
