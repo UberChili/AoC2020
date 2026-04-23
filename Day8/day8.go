@@ -22,15 +22,39 @@ func main() {
 		instructions = append(instructions, parse_line_into_instruction(line))
 	}
 
-	inst_indices := make(map[int]int)
+	for i := 0; i < len(instructions); i++ {
+		if instructions[i].inst == "jmp" {
+			instructions[i].inst = "nop"
+			accumulator, ended_normally := simulation(instructions)
+			if ended_normally {
+				fmt.Println("Ended Normally. Accumulator:", accumulator)
+				break
+			} else {
+				instructions[i].inst = "jmp"
+			}
+		}
+		if instructions[i].inst == "nop" {
+			instructions[i].inst = "jmp"
+			accumulator, ended_normally := simulation(instructions)
+			if ended_normally {
+				fmt.Println("Ended Normally. Accumulator:", accumulator)
+				break
+			} else {
+				instructions[i].inst = "nop"
+			}
+		}
+	}
+}
 
+func simulation(instructions []Instruction) (int, bool) {
 	accumulator := 0
 	index := 0
+
+	inst_indices := make(map[int]int)
+
 	for index < len(instructions) {
-		fmt.Printf("index: %d | instruction: %#v | accumulator: %d\n", index, instructions[index], accumulator)
 		if _, ok := inst_indices[index]; ok {
-			fmt.Println("Accumulator:", accumulator)
-			break
+			return accumulator, false
 		}
 		current := instructions[index]
 		switch current.inst {
@@ -46,6 +70,7 @@ func main() {
 			accumulator += current.num
 		}
 	}
+	return accumulator, true
 }
 
 func parse_line_into_instruction(line string) Instruction {
