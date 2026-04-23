@@ -87,44 +87,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Day6/day6.odin",
-			"settings":
-			{
-				"buffer_size": 1469,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Day6/day6.go",
-			"settings":
-			{
-				"buffer_size": 1970,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					6,
-					1,
-					"insert",
-					{
-						"characters": "1"
-					},
-					"AQAAALIHAAAAAAAAswcAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACyBwAAAAAAALIHAAAAAAAAAAAAAAAAAAA"
-				],
-				[
-					7,
-					1,
-					"left_delete",
-					null,
-					"AQAAALIHAAAAAAAAsgcAAAAAAAABAAAAMQ",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACzBwAAAAAAALMHAAAAAAAAAAAAAAAA8L8"
-				]
-			]
-		}
 	],
 	"build_system": "Packages/Rust Enhanced/RustEnhanced.sublime-build",
 	"build_system_choices":
@@ -282,13 +244,14 @@
 	],
 	"file_history":
 	[
+		"/home/andros/Programming/AoC2020/Day8/day8.go",
+		"/home/andros/Programming/AoC2020/Day6/day6.go",
 		"/home/andros/Programming/AoC2020/Day6/day6.odin",
 		"/home/andros/.config/sublime-text/Packages/User/.neovintageousrc",
 		"/home/andros/Programming/AoC2020/aoc2020_sublime.sublime-project",
 		"/home/andros/Odin/core/slice/sort.odin",
 		"/home/andros/Odin/core/sys/es/api.odin",
 		"/home/andros/Odin/vendor/raylib/raylib.odin",
-		"/home/andros/Programming/AoC2020/Day6/day6.go",
 		"/home/andros/Programming/AoC/2020/Day3/day3.odin",
 		"/home/andros/Programming/AoC/2020/aoc_odin.sublime-build",
 		"/home/andros/Programming/AoC/2020/Day6/example.txt",
@@ -357,95 +320,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Day6/day6.odin",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1469,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_complete_triggers":
-							[
-								{
-									"characters": "<",
-									"selector": "text.html, text.xml"
-								},
-								{
-									"rhs_empty": true,
-									"selector": "punctuation.accessor"
-								},
-								{
-									"characters": ".>#\"/:",
-									"selector": "meta.tag, source - comment - string.quoted.double.block - string.quoted.single.block - string.unquoted.heredoc",
-									"server": "odin"
-								}
-							],
-							"lsp_active": true,
-							"lsp_uri": "file:///home/andros/Programming/AoC2020/Day6/day6.odin",
-							"show_definitions": false,
-							"syntax": "Packages/Odin/Odin.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"sheets":
-			[
-				{
-					"buffer": 1,
-					"file": "Day6/day6.go",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1970,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1968,
-								1968
-							]
-						],
-						"settings":
-						{
-							"lsp_uri": "file:///home/andros/Programming/AoC2020/Day6/day6.go",
-							"syntax": "Packages/Go/Go.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 848.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -466,18 +340,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -535,6 +402,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"day 8",
+				"AoC2020/Day8/day8.go"
+			],
 			[
 				"odin day6",
 				"AoC2020/Day6/day6.odin"
@@ -628,7 +499,7 @@
 		],
 		"width": 592.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 		"_vintageous_reset_during_init": true,
