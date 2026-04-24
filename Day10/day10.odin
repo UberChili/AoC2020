@@ -29,17 +29,11 @@ traverse_numbers :: proc(numbers: []int) -> int {
 		difference := num - current
 		if difference == 1 {
 			count_one += 1
-			current = num
-			continue
 		}
 		if difference == 3 {
 			count_three += 1
-			current = num
-			continue
 		}
-		else {
-			current = num
-		}
+		current = num
 	}
 	// last (my device's built-in adapter, which is always 3 higher than the highest adapter)
 	count_three += 1
