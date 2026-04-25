@@ -13,11 +13,31 @@ main :: proc() {
 	defer delete(numbers)
 
 	slice.sort_by(numbers[:], int_order)
+	all := make([dynamic]int)
+	defer delete(all)
 
-	for number in numbers {
+	append(&all, 0)
+	append(&all, ..numbers[:])
+
+	for number in all {
 		fmt.println(number)
 	}
 	fmt.println("Multiplication result:", traverse_numbers(numbers[:]))
+	fmt.println("Ways:", count_arrangements(all[:]))
+}
+
+count_arrangements :: proc(numbers: []int) -> i64 {
+	ways := make(map[int]i64)
+	defer delete(ways)
+	ways[0] = 1
+
+	for i:= 0; i < len(numbers); i += 1 {
+		for j := i - 1; j >= 0 && (numbers[i] - numbers[j] <= 3); j -= 1 {
+			ways[i] += ways[j]
+		}
+
+	}
+	return ways[len(ways) - 1]
 }
 
 traverse_numbers :: proc(numbers: []int) -> int {
