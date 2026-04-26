@@ -22,16 +22,23 @@ main :: proc() {
     // Grid traversal
     for row := 0; row < len(rows); row += 1 {
         for c := 0; c < len(rows[0]); c += 1 {
-            // top
-            // bottom
-            // left
-            // right
-            // top left
-            // bottom left
-            // top right
-            // bottom right
+            // if empty
+            if is_empty(rows[row][c]) {
+                // if no adjacent
+            }
         }
     }
+}
+
+no_adjacent :: proc(c: rune, grid: []int) -> bool {
+    // top
+    // bottom
+    // left
+    // right
+    // top left
+    // bottom left
+    // top right
+    // bottom right
 }
 
 check_if_taken :: proc(c: rune) -> bool {
@@ -41,7 +48,7 @@ check_if_taken :: proc(c: rune) -> bool {
     return false
 }
 
-is_empty :: proc(c: rune) -> bool {
+is_empty :: proc(c: u8) -> bool {
     if c == 'L' {
         return true
     }
